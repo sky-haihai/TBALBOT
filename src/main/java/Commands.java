@@ -13,7 +13,7 @@ public class Commands extends ListenerAdapter {
     public String cmd_Leave = "eqe亏内";
     public String cmd_Help = "龙龙";
     public String cmd_Slogan = "我们的口号是";
-    public String cmd_Play = "play";
+    public String cmd_Play = "拷打";
 
     private static int indexTracker = 0;
 
@@ -169,6 +169,7 @@ public class Commands extends ListenerAdapter {
         embed.addField(cmd_Join, "加入语音频道", true);
         embed.addField(cmd_Leave, "离开语音频道", true);
         embed.addField(cmd_Slogan, "喊出咱家人口号", true);
+        embed.addField(cmd_Play,"播放油管视频（未来支持b站）",true);
 
         embed.setFooter("Bot created by 徒步阿龙");
         var msg = embed.build();
