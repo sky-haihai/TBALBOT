@@ -20,6 +20,7 @@ public class MusicPlayer {
     private MusicPlayer() {
         this.audioPlayerManager = new DefaultAudioPlayerManager();
         AudioSourceManagers.registerRemoteSources(this.audioPlayerManager);
+        AudioSourceManagers.registerLocalSource(this.audioPlayerManager);
 
     }
 
